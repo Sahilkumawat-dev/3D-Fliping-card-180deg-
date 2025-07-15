@@ -1,0 +1,13 @@
+8/30 days coding challenge (18-12-24).
+===========================================
+NotesSociety
+================================================
+NotesSociety link: https://notessociety.netlify.app/
+
+=======================================================
+follow on WhatsApp group by website..
+============================================================
+"Fliping-card(180deg)"   
+"As soon as you hover over the card, the card rotates 180deg."
+===================================================
+

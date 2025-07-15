@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #d8f2f3 0%, #ebf9f9 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  perspective: 1000px;
+  gap: 100px;
+}
+
+.card {
+  position: relative;
+  width: 290px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.card1 .front-face {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+              url('https://i.pinimg.com/736x/44/a5/a3/44a5a311798f09a54c4dfaf2db1979d2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 .front-face {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+              url('https://live.staticflickr.com/7476/15714104647_05503370c3_z.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 .front-face {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+              url('https://static.timesprism.com/thumb/imgsize-365456,msid-98658395,width-768,height-1280,resizemode-6,webp-1/98658395.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.back-face {
+  background: linear-gradient(45deg, #043348 0%, #032535 100%);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  text-align: center;
+  color: white;
+}
+
+.contents p {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+    top: 305px;
+}
+
+.contents span {
+  font-size: 18px;
+  font-size: 18px;
+    position: relative;
+    top: 305px;
+}
+
+.icons {
+  margin-top: 15px;
+}
+
+.icons i {
+  font-size: 20px;
+  color: #042f4b;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  transition: transform 0.3s;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+}
